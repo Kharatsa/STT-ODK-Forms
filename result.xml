@@ -4,7 +4,7 @@
     <h:title>Results Pickup</h:title>
     <model>
       <instance>
-        <result id="result">
+        <result id="result" version="2">
           <start/>
           <end/>
           <deviceid/>

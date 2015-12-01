@@ -1,5 +1,10 @@
 cond_key,cond
 ok,OK
-broken,Broken container
-badform,Invalid form
-missingform,Missing form
+nostock,FBC reagents out of stock
+overflow,Sample overfilled
+soiled,Soiled sample
+nocd4,CD4 not detected
+nolabel,MIssing label
+badlabel,Bad label
+clot,Clotted blood
+empty,Empty bottle

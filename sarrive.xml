@@ -4,7 +4,7 @@
     <h:title>Sample Arrival</h:title>
     <model>
       <instance>
-        <sarrive id="sarrive">
+        <sarrive id="sarrive" version="2">
           <start/>
           <end/>
           <deviceid/>

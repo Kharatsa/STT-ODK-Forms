@@ -1,17 +1,16 @@
 region_key,region
-maseru,Maseru
-morija,Morija
-roma,Roma
-bereahospital,Berea Hospital
-berea-maluti,Berea - Maluti 
-mohaleshoek,Mohale's Hoek
-quthing,Quthing
-leribe,Leribe
-mamohau,Mamohau
-mokhotlong,Mokhotlong
-bbseboche,Butha Buthe Seboche
-bbhospital,Butha Buthe - Hospital
-qacha,Qacha
-ttparay,Thaba-Tseka Paray
-ttjames,Thaba Tseka St. James - Mantsonyane
-mafeteng,Mafeteng
+MSR,MASERU
+ROM,ROMA
+MRJ,MORIJA
+BRM,BEREA - MALUTI
+MHH,MOHALE'S HOEK
+QTH,QUTHING
+LRB,LERIBE
+MMH,MAMOHAU
+MKH,MOKHOTLONG
+BTS,BUTHA BUTHE SEBOCHE
+BTH,BUTHA BUTHE - HOSPITAL
+QCH,QACHA
+THP,THABA-TSEKA PARAY
+TST,THABA TSEKA ST. JAMES - MANTSONYANE
+MFT,MAFETENG

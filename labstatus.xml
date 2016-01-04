@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>Lab Status</h:title>
+    <model>
+      <instance>
+        <labstatus id="labstatus">
+          <start/>
+          <end/>
+          <deviceid/>
+          <simserial/>
+          <person/>
+          <region/>
+          <facility/>
+          <srepeat jr:template="">
+            <stid/>
+            <labid/>
+            <labstatus/>
+            <labtest/>
+            <labreject/>
+          </srepeat>
+          <store_gps/>
+          <meta>
+            <instanceID/>
+          </meta>
+        </labstatus>
+      </instance>
+      <bind jr:preload="timestamp" jr:preloadParams="start" nodeset="/labstatus/start" type="dateTime"/>
+      <bind jr:preload="timestamp" jr:preloadParams="end" nodeset="/labstatus/end" type="dateTime"/>
+      <bind jr:preload="property" jr:preloadParams="deviceid" nodeset="/labstatus/deviceid" type="string"/>
+      <bind jr:preload="property" jr:preloadParams="simserial" nodeset="/labstatus/simserial" type="string"/>
+      <bind nodeset="/labstatus/person" type="select1"/>
+      <bind nodeset="/labstatus/region" type="select1"/>
+      <bind nodeset="/labstatus/facility" type="select1"/>
+      <bind nodeset="/labstatus/srepeat/stid" required="true()" type="barcode"/>
+      <bind nodeset="/labstatus/srepeat/labid" required="true()" type="barcode"/>
+      <bind nodeset="/labstatus/srepeat/labstatus" required="true()" type="select1"/>
+      <bind nodeset="/labstatus/srepeat/labtest" required="true()" type="select1"/>
+      <bind nodeset="/labstatus/srepeat/labreject" type="select1"/>
+      <bind nodeset="/labstatus/store_gps" required="true()" type="geopoint"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/labstatus/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body>
+    <select1 appearance="quick search('riders')" ref="/labstatus/person">
+      <label>Lab Person</label>
+      <item>
+        <label>rider</label>
+        <value>rider_key</value>
+      </item>
+    </select1>
+    <select1 appearance="quick search('regions')" ref="/labstatus/region">
+      <label>Region</label>
+      <item>
+        <label>region</label>
+        <value>region_key</value>
+      </item>
+    </select1>
+    <select1 appearance="quick search('facilities', 'matches', 'region',  /labstatus/region )" ref="/labstatus/facility">
+      <label>Facility</label>
+      <item>
+        <label>facility</label>
+        <value>facility_key</value>
+      </item>
+    </select1>
+    <group ref="/labstatus/srepeat">
+      <label>New Sample</label>
+      <repeat nodeset="/labstatus/srepeat">
+        <input ref="/labstatus/srepeat/stid">
+          <label>ST Barcode</label>
+        </input>
+        <input ref="/labstatus/srepeat/labid">
+          <label>ST Barcode</label>
+        </input>
+        <select1 appearance="quick search('labstatus')" ref="/labstatus/srepeat/labstatus">
+          <label>Status Code</label>
+          <item>
+            <label>status</label>
+            <value>status_key</value>
+          </item>
+        </select1>
+        <select1 appearance="quick search('labtest')" ref="/labstatus/srepeat/labtest">
+          <label>Test Request Code</label>
+          <item>
+            <label>test</label>
+            <value>test_key</value>
+          </item>
+        </select1>
+        <select1 appearance="quick search('labreject')" ref="/labstatus/srepeat/labreject">
+          <label>Rejection Code</label>
+          <item>
+            <label>reject</label>
+            <value>reject_key</value>
+          </item>
+        </select1>
+      </repeat>
+    </group>
+    <input ref="/labstatus/store_gps">
+      <label>GPS Coordinates</label>
+      <hint>GPS coordinates can only be collected when outside.</hint>
+    </input>
+  </h:body>
+</h:html>

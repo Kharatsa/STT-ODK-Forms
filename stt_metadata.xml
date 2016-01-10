@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>STT Metadata</h:title>
+    <model>
+      <instance>
+        <stt_metadata id="stt_metadata">
+          <start/>
+          <end/>
+          <deviceid/>
+          <simserial/>
+          <actionDate/>
+          <action/>
+          <type/>
+          <key/>
+          <detail/>
+          <meta>
+            <instanceID/>
+          </meta>
+        </stt_metadata>
+      </instance>
+      <bind jr:preload="timestamp" jr:preloadParams="start" nodeset="/stt_metadata/start" type="dateTime"/>
+      <bind jr:preload="timestamp" jr:preloadParams="end" nodeset="/stt_metadata/end" type="dateTime"/>
+      <bind jr:preload="property" jr:preloadParams="deviceid" nodeset="/stt_metadata/deviceid" type="string"/>
+      <bind jr:preload="property" jr:preloadParams="simserial" nodeset="/stt_metadata/simserial" type="string"/>
+      <bind nodeset="/stt_metadata/actionDate" type="dateTime"/>
+      <bind nodeset="/stt_metadata/action" required="true()" type="select1"/>
+      <bind nodeset="/stt_metadata/type" required="true()" type="select1"/>
+      <bind nodeset="/stt_metadata/key" type="string"/>
+      <bind nodeset="/stt_metadata/detail" type="string"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/stt_metadata/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body>
+    <input ref="/stt_metadata/actionDate">
+      <label>Date Changed</label>
+    </input>
+    <select1 ref="/stt_metadata/action">
+      <label>Action</label>
+      <item>
+        <label>Add</label>
+        <value>add</value>
+      </item>
+      <item>
+        <label>Update</label>
+        <value>update</value>
+      </item>
+      <item>
+        <label>Remove</label>
+        <value>remove</value>
+      </item>
+    </select1>
+    <select1 ref="/stt_metadata/type">
+      <label>Metadata Type</label>
+      <item>
+        <label>Facility</label>
+        <value>facility</value>
+      </item>
+      <item>
+        <label>Region</label>
+        <value>region</value>
+      </item>
+      <item>
+        <label>Person</label>
+        <value>person</value>
+      </item>
+      <item>
+        <label>Condition</label>
+        <value>condition</value>
+      </item>
+      <item>
+        <label>Sample Type</label>
+        <value>stype</value>
+      </item>
+      <item>
+        <label>Lab Status</label>
+        <value>labstatus</value>
+      </item>
+      <item>
+        <label>Lab Test</label>
+        <value>labtest</value>
+      </item>
+      <item>
+        <label>Lab Reject</label>
+        <value>labreject</value>
+      </item>
+    </select1>
+    <input ref="/stt_metadata/key">
+      <label>Metadata Key</label>
+    </input>
+    <input ref="/stt_metadata/detail">
+      <label>Metadata Detail</label>
+    </input>
+  </h:body>
+</h:html>

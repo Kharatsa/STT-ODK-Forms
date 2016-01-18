@@ -1,6 +1,7 @@
 stype_key,stype
-blood,Blood
-sputum,Sputum
-urine,Urine
-dbs,Dried blood spot
-other,Other
+form,Request Form
+blood,Blood Sample
+sputum,Sputum Sample
+urine,Urine Sample
+dbs,Dried Blood Spot Sample
+other,Other Sample Type

@@ -4,7 +4,7 @@
     <h:title>Lab Link</h:title>
     <model>
       <instance>
-        <link id="link" version="2">
+        <link id="link" version="3">
           <start/>
           <end/>
           <deviceid/>

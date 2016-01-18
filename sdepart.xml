@@ -4,7 +4,7 @@
     <h:title>Sample Departure</h:title>
     <model>
       <instance>
-        <sdepart id="sdepart" version="2">
+        <sdepart id="sdepart" version="3">
           <start/>
           <end/>
           <deviceid/>

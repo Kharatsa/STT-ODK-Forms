@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>Results Arrive</h:title>
+    <model>
+      <instance>
+        <rarrive id="rarrive">
+          <start/>
+          <end/>
+          <deviceid/>
+          <simserial/>
+          <person/>
+          <region/>
+          <facility/>
+          <srepeat jr:template="">
+            <labid/>
+          </srepeat>
+          <store_gps/>
+          <meta>
+            <instanceID/>
+          </meta>
+        </rarrive>
+      </instance>
+      <bind jr:preload="timestamp" jr:preloadParams="start" nodeset="/rarrive/start" type="dateTime"/>
+      <bind jr:preload="timestamp" jr:preloadParams="end" nodeset="/rarrive/end" type="dateTime"/>
+      <bind jr:preload="property" jr:preloadParams="deviceid" nodeset="/rarrive/deviceid" type="string"/>
+      <bind jr:preload="property" jr:preloadParams="simserial" nodeset="/rarrive/simserial" type="string"/>
+      <bind nodeset="/rarrive/person" required="true()" type="select1"/>
+      <bind nodeset="/rarrive/region" required="true()" type="select1"/>
+      <bind nodeset="/rarrive/facility" required="true()" type="select1"/>
+      <bind nodeset="/rarrive/srepeat/labid" required="true()" type="barcode"/>
+      <bind nodeset="/rarrive/store_gps" required="true()" type="geopoint"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/rarrive/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body>
+    <select1 appearance="quick search('riders')" ref="/rarrive/person">
+      <label>Rider Name</label>
+      <item>
+        <label>rider</label>
+        <value>rider_key</value>
+      </item>
+    </select1>
+    <select1 appearance="quick search('regions')" ref="/rarrive/region">
+      <label>Region</label>
+      <item>
+        <label>region</label>
+        <value>region_key</value>
+      </item>
+    </select1>
+    <select1 appearance="quick search('facilities', 'matches', 'region',  /rarrive/region )" ref="/rarrive/facility">
+      <label>Facility</label>
+      <item>
+        <label>facility</label>
+        <value>facility_key</value>
+      </item>
+    </select1>
+    <group ref="/rarrive/srepeat">
+      <label>New Result</label>
+      <repeat nodeset="/rarrive/srepeat">
+        <input ref="/rarrive/srepeat/labid">
+          <label>Lab Barcode</label>
+        </input>
+      </repeat>
+    </group>
+    <input ref="/rarrive/store_gps">
+      <label>GPS Coordinates</label>
+      <hint>GPS coordinates can only be collected when outside.</hint>
+    </input>
+  </h:body>
+</h:html>

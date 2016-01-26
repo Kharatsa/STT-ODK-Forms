@@ -4,7 +4,7 @@
     <h:title>Lab Status</h:title>
     <model>
       <instance>
-        <labstatus id="labstatus">
+        <labstatus id="labstatus" version="20160126">
           <start/>
           <end/>
           <deviceid/>

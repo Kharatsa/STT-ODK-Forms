@@ -4,7 +4,7 @@ nostock,FBC reagents out of stock
 overflow,Sample overfilled
 soiled,Soiled sample
 nocd4,CD4 not detected
-nolabel,MIssing label
+nolabel,Missing label
 badlabel,Bad label
 clot,Clotted blood
 empty,Empty bottle

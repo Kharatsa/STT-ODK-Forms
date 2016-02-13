@@ -4,7 +4,7 @@
     <h:title>Sample Pickup</h:title>
     <model>
       <instance>
-        <sdepart id="sdepart" version="20160126">
+        <sdepart id="sdepart" version="20160212">
           <start/>
           <end/>
           <deviceid/>
@@ -32,8 +32,8 @@
       <bind nodeset="/sdepart/facility" required="true()" type="select1"/>
       <bind nodeset="/sdepart/srepeat/stid" required="true()" type="barcode"/>
       <bind nodeset="/sdepart/srepeat/stype" required="true()" type="select1"/>
-      <bind nodeset="/sdepart/srepeat/condition" required="true()" type="select1"/>
-      <bind nodeset="/sdepart/store_gps" required="true()" type="geopoint"/>
+      <bind nodeset="/sdepart/srepeat/condition" relevant="not(selected( /sdepart/srepeat/stype , 'form'))" required="true()" type="select1"/>
+      <bind nodeset="/sdepart/store_gps" type="geopoint"/>
       <bind calculate="concat('uuid:', uuid())" nodeset="/sdepart/meta/instanceID" readonly="true()" type="string"/>
     </model>
   </h:head>
@@ -60,13 +60,13 @@
       </item>
     </select1>
     <group ref="/sdepart/srepeat">
-      <label>New Sample</label>
+      <label>New Scan</label>
       <repeat nodeset="/sdepart/srepeat">
         <input ref="/sdepart/srepeat/stid">
           <label>ST Barcode</label>
         </input>
         <select1 appearance="quick search('stypes')" ref="/sdepart/srepeat/stype">
-          <label>Specimen Type</label>
+          <label>Scan Type</label>
           <item>
             <label>stype</label>
             <value>stype_key</value>

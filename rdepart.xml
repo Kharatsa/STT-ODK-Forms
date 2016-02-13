@@ -4,7 +4,7 @@
     <h:title>Results Pickup</h:title>
     <model>
       <instance>
-        <rdepart id="rdepart" version="20160126">
+        <rdepart id="rdepart" version="20160212">
           <start/>
           <end/>
           <deviceid/>
@@ -29,7 +29,7 @@
       <bind nodeset="/rdepart/region" required="true()" type="select1"/>
       <bind nodeset="/rdepart/facility" required="true()" type="select1"/>
       <bind nodeset="/rdepart/srepeat/labid" required="true()" type="barcode"/>
-      <bind nodeset="/rdepart/store_gps" required="true()" type="geopoint"/>
+      <bind nodeset="/rdepart/store_gps" type="geopoint"/>
       <bind calculate="concat('uuid:', uuid())" nodeset="/rdepart/meta/instanceID" readonly="true()" type="string"/>
     </model>
   </h:head>
@@ -56,7 +56,7 @@
       </item>
     </select1>
     <group ref="/rdepart/srepeat">
-      <label>New Result</label>
+      <label>New Scan</label>
       <repeat nodeset="/rdepart/srepeat">
         <input ref="/rdepart/srepeat/labid">
           <label>Lab Barcode</label>

@@ -4,7 +4,7 @@
     <h:title>Lab Link</h:title>
     <model>
       <instance>
-        <link id="link" version="20160126">
+        <link id="link" version="20160212">
           <start/>
           <end/>
           <deviceid/>
@@ -31,7 +31,7 @@
       <bind nodeset="/link/facility" required="true()" type="select1"/>
       <bind nodeset="/link/srepeat/stid" required="true()" type="barcode"/>
       <bind nodeset="/link/srepeat/labid" required="true()" type="barcode"/>
-      <bind nodeset="/link/store_gps" required="true()" type="geopoint"/>
+      <bind nodeset="/link/store_gps" type="geopoint"/>
       <bind calculate="concat('uuid:', uuid())" nodeset="/link/meta/instanceID" readonly="true()" type="string"/>
     </model>
   </h:head>

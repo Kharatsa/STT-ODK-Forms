@@ -4,7 +4,7 @@
     <h:title>Lab Status</h:title>
     <model>
       <instance>
-        <labstatus id="labstatus" version="20160126">
+        <labstatus id="labstatus" version="20160212">
           <start/>
           <end/>
           <deviceid/>
@@ -12,9 +12,10 @@
           <person/>
           <region/>
           <facility/>
+          <stid/>
+          <labid/>
+          <labtime/>
           <srepeat jr:template="">
-            <stid/>
-            <labid/>
             <labstatus/>
             <labtest/>
             <labreject/>
@@ -32,12 +33,13 @@
       <bind nodeset="/labstatus/person" type="select1"/>
       <bind nodeset="/labstatus/region" type="select1"/>
       <bind nodeset="/labstatus/facility" type="select1"/>
-      <bind nodeset="/labstatus/srepeat/stid" required="true()" type="barcode"/>
-      <bind nodeset="/labstatus/srepeat/labid" required="true()" type="barcode"/>
+      <bind nodeset="/labstatus/stid" required="true()" type="barcode"/>
+      <bind nodeset="/labstatus/labid" required="true()" type="barcode"/>
+      <bind nodeset="/labstatus/labtime" required="true()" type="dateTime"/>
       <bind nodeset="/labstatus/srepeat/labstatus" required="true()" type="select1"/>
       <bind nodeset="/labstatus/srepeat/labtest" required="true()" type="select1"/>
       <bind nodeset="/labstatus/srepeat/labreject" type="select1"/>
-      <bind nodeset="/labstatus/store_gps" required="true()" type="geopoint"/>
+      <bind nodeset="/labstatus/store_gps" type="geopoint"/>
       <bind calculate="concat('uuid:', uuid())" nodeset="/labstatus/meta/instanceID" readonly="true()" type="string"/>
     </model>
   </h:head>
@@ -63,15 +65,18 @@
         <value>facility_key</value>
       </item>
     </select1>
+    <input ref="/labstatus/stid">
+      <label>Sample Tracking ID</label>
+    </input>
+    <input ref="/labstatus/labid">
+      <label>Lab ID</label>
+    </input>
+    <input ref="/labstatus/labtime">
+      <label>Status Timestamp</label>
+    </input>
     <group ref="/labstatus/srepeat">
-      <label>New Sample</label>
+      <label>New Sample Test</label>
       <repeat nodeset="/labstatus/srepeat">
-        <input ref="/labstatus/srepeat/stid">
-          <label>ST Barcode</label>
-        </input>
-        <input ref="/labstatus/srepeat/labid">
-          <label>ST Barcode</label>
-        </input>
         <select1 appearance="quick search('labstatus')" ref="/labstatus/srepeat/labstatus">
           <label>Status Code</label>
           <item>

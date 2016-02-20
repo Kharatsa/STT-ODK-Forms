@@ -59,7 +59,7 @@ PSH,Pshatlella,MRJ
 STN,St. Andrews,MRJ
 STR,St. Rodrique,MRJ
 LTT,Little Flower,MRJ
-BTH,Bethany,MRJ
+BTHY,Bethany,MRJ
 GDS,Good Shaphard,MRJ
 PBL,Paballong,MRJ
 PLT,Pilot,MRJ
@@ -77,7 +77,7 @@ SIN,Sion,BRM
 SBD,Sebedia,BRM
 MPH,Mapheleng,BRM
 MTSN,Mootsinyana,MHH
-MRF,Morifi,MHH
+MRF,Morifi,MHHQTH
 TSP,Tsepo,MHH
 MPHR,Mpharane,MHH
 LPH,Liphiring,MHH
@@ -90,7 +90,7 @@ LTH,Lithipeng,MHH
 HLYC,Holy Cross,MHH
 MPHK,Mphaki,QTH
 MAK,Makoae,QTH
-TST,Tsatsane,QTH
+TSTN,Tsatsane,QTH
 STG,St. Gabriel,QTH
 DLL,Dilli Dilli,QTH
 VLL,Villa Maria,QTH
@@ -130,7 +130,7 @@ MLK,Molika - liko,MKH
 MKT,Moeketsane,MKH
 BKT,Boiketsiso,BTS
 NGJ,Ngoajane,BTS
-MKH,Makhunoane,BTS
+MKHN,Makhunoane,BTS
 MUL,Muela,BTS
 STPT,St. Peters,BTS
 STPL,St. Paul,BTH

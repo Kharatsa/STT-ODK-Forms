@@ -4,7 +4,7 @@
     <h:title>Lab Status</h:title>
     <model>
       <instance>
-        <labstatus id="labstatus" version="20160220">
+        <labstatus id="labstatus" version="20160221">
           <start/>
           <end/>
           <deviceid/>
@@ -21,6 +21,7 @@
             <labreject/>
           </srepeat>
           <store_gps/>
+          <raw_xml/>
           <meta>
             <instanceID/>
           </meta>
@@ -40,6 +41,7 @@
       <bind nodeset="/labstatus/srepeat/labtest" required="true()" type="select1"/>
       <bind nodeset="/labstatus/srepeat/labreject" type="select1"/>
       <bind nodeset="/labstatus/store_gps" type="geopoint"/>
+      <bind nodeset="/labstatus/raw_xml" type="string"/>
       <bind calculate="concat('uuid:', uuid())" nodeset="/labstatus/meta/instanceID" readonly="true()" type="string"/>
     </model>
   </h:head>
@@ -103,6 +105,9 @@
     <input ref="/labstatus/store_gps">
       <label>GPS Coordinates</label>
       <hint>GPS coordinates can only be collected when outside.</hint>
+    </input>
+    <input ref="/labstatus/raw_xml">
+      <label>Original Disa Labs XML submission</label>
     </input>
   </h:body>
 </h:html>

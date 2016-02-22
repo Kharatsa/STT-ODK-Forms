@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:odk="http://www.opendatakit.org/xforms">
   <h:head>
     <h:title>Lab Status</h:title>
     <model>
@@ -21,6 +21,7 @@
             <labreject/>
           </srepeat>
           <store_gps/>
+          <rawxml/>
           <meta>
             <instanceID/>
           </meta>
@@ -40,6 +41,7 @@
       <bind nodeset="/labstatus/srepeat/labtest" required="true()" type="select1"/>
       <bind nodeset="/labstatus/srepeat/labreject" type="select1"/>
       <bind nodeset="/labstatus/store_gps" type="geopoint"/>
+      <bind nodeset="/labstatus/rawxml" odk:length="16000" type="string"/>
       <bind calculate="concat('uuid:', uuid())" nodeset="/labstatus/meta/instanceID" readonly="true()" type="string"/>
     </model>
   </h:head>
@@ -103,6 +105,9 @@
     <input ref="/labstatus/store_gps">
       <label>GPS Coordinates</label>
       <hint>GPS coordinates can only be collected when outside.</hint>
+    </input>
+    <input ref="/labstatus/rawxml">
+      <label>Disa Labs Raw XML submission</label>
     </input>
   </h:body>
 </h:html>

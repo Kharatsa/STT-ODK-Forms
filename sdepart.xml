@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <h:head>
-    <h:title>Sample Pickup</h:title>
+    <h:title>1. Sample Pickup</h:title>
     <model>
       <instance>
-        <sdepart id="sdepart" version="20160212">
+        <sdepart id="sdepart" version="20160223">
           <start/>
           <end/>
           <deviceid/>
@@ -30,6 +30,7 @@
       <bind nodeset="/sdepart/person" required="true()" type="select1"/>
       <bind nodeset="/sdepart/region" required="true()" type="select1"/>
       <bind nodeset="/sdepart/facility" required="true()" type="select1"/>
+      <bind nodeset="/sdepart/srepeat" required="true()"/>
       <bind nodeset="/sdepart/srepeat/stid" required="true()" type="barcode"/>
       <bind nodeset="/sdepart/srepeat/stype" required="true()" type="select1"/>
       <bind nodeset="/sdepart/srepeat/condition" relevant="not(selected( /sdepart/srepeat/stype , 'form'))" required="true()" type="select1"/>

@@ -4,7 +4,7 @@
     <h:title>1. Sample Pickup</h:title>
     <model>
       <instance>
-        <sdepart id="sdepart" version="20160223">
+        <sdepart id="sdepart" version="20160229">
           <start/>
           <end/>
           <deviceid/>
@@ -30,7 +30,6 @@
       <bind nodeset="/sdepart/person" required="true()" type="select1"/>
       <bind nodeset="/sdepart/region" required="true()" type="select1"/>
       <bind nodeset="/sdepart/facility" required="true()" type="select1"/>
-      <bind nodeset="/sdepart/srepeat" required="true()"/>
       <bind nodeset="/sdepart/srepeat/stid" required="true()" type="barcode"/>
       <bind nodeset="/sdepart/srepeat/stype" required="true()" type="select1"/>
       <bind nodeset="/sdepart/srepeat/condition" relevant="not(selected( /sdepart/srepeat/stype , 'form'))" required="true()" type="select1"/>
@@ -64,7 +63,7 @@
       <label>New Scan</label>
       <repeat nodeset="/sdepart/srepeat">
         <input ref="/sdepart/srepeat/stid">
-          <label>ST Barcode</label>
+          <label>STT Barcode</label>
         </input>
         <select1 appearance="quick search('stypes')" ref="/sdepart/srepeat/stype">
           <label>Scan Type</label>

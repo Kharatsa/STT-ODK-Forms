@@ -4,7 +4,7 @@
     <h:title>4. Results Delivery</h:title>
     <model>
       <instance>
-        <rarrive id="rarrive"  version="20160223">
+        <rarrive id="rarrive" version="20160229">
           <start/>
           <end/>
           <deviceid/>
@@ -13,7 +13,7 @@
           <region/>
           <facility/>
           <srepeat jr:template="">
-            <labid/>
+            <stid/>
           </srepeat>
           <store_gps/>
           <meta>
@@ -28,7 +28,7 @@
       <bind nodeset="/rarrive/person" required="true()" type="select1"/>
       <bind nodeset="/rarrive/region" required="true()" type="select1"/>
       <bind nodeset="/rarrive/facility" required="true()" type="select1"/>
-      <bind nodeset="/rarrive/srepeat/labid" required="true()" type="barcode"/>
+      <bind nodeset="/rarrive/srepeat/stid" required="true()" type="barcode"/>
       <bind nodeset="/rarrive/store_gps" type="geopoint"/>
       <bind calculate="concat('uuid:', uuid())" nodeset="/rarrive/meta/instanceID" readonly="true()" type="string"/>
     </model>
@@ -58,8 +58,8 @@
     <group ref="/rarrive/srepeat">
       <label>New Scan</label>
       <repeat nodeset="/rarrive/srepeat">
-        <input ref="/rarrive/srepeat/labid">
-          <label>Lab Barcode</label>
+        <input ref="/rarrive/srepeat/stid">
+          <label>STT Barcode</label>
         </input>
       </repeat>
     </group>

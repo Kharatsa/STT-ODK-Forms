@@ -4,7 +4,7 @@
     <h:title>2. Sample Delivery</h:title>
     <model>
       <instance>
-        <sarrive id="sarrive" version="20160223">
+        <sarrive id="sarrive" version="20160229">
           <start/>
           <end/>
           <deviceid/>
@@ -63,7 +63,7 @@
       <label>New Scan</label>
       <repeat nodeset="/sarrive/srepeat">
         <input ref="/sarrive/srepeat/stid">
-          <label>ST Barcode</label>
+          <label>STT Barcode</label>
         </input>
         <select1 appearance="quick search('stypes')" ref="/sarrive/srepeat/stype">
           <label>Scan Type</label>

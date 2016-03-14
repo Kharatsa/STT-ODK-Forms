@@ -4,19 +4,20 @@
     <h:title>1. Sample Pickup</h:title>
     <model>
       <instance>
-        <sdepart id="sdepart" version="20160229">
+        <sdepart id="sdepart" version="2016031401">
           <start/>
           <end/>
           <deviceid/>
           <simserial/>
-          <person/>
           <region/>
           <facility/>
-          <srepeat jr:template="">
-            <stid/>
+          <trepeat jr:template="">
             <stype/>
             <condition/>
-          </srepeat>
+            <srepeat jr:template="">
+              <stid/>
+            </srepeat>
+          </trepeat>
           <store_gps/>
           <meta>
             <instanceID/>
@@ -27,24 +28,16 @@
       <bind jr:preload="timestamp" jr:preloadParams="end" nodeset="/sdepart/end" type="dateTime"/>
       <bind jr:preload="property" jr:preloadParams="deviceid" nodeset="/sdepart/deviceid" type="string"/>
       <bind jr:preload="property" jr:preloadParams="simserial" nodeset="/sdepart/simserial" type="string"/>
-      <bind nodeset="/sdepart/person" required="true()" type="select1"/>
       <bind nodeset="/sdepart/region" required="true()" type="select1"/>
       <bind nodeset="/sdepart/facility" required="true()" type="select1"/>
-      <bind nodeset="/sdepart/srepeat/stid" required="true()" type="barcode"/>
-      <bind nodeset="/sdepart/srepeat/stype" required="true()" type="select1"/>
-      <bind nodeset="/sdepart/srepeat/condition" relevant="not(selected( /sdepart/srepeat/stype , 'form'))" required="true()" type="select1"/>
+      <bind nodeset="/sdepart/trepeat/stype" required="true()" type="select1"/>
+      <bind nodeset="/sdepart/trepeat/condition" relevant="not(selected( /sdepart/trepeat/stype , 'form'))" required="true()" type="select1"/>
+      <bind nodeset="/sdepart/trepeat/srepeat/stid" required="true()" type="barcode"/>
       <bind nodeset="/sdepart/store_gps" type="geopoint"/>
       <bind calculate="concat('uuid:', uuid())" nodeset="/sdepart/meta/instanceID" readonly="true()" type="string"/>
     </model>
   </h:head>
   <h:body>
-    <select1 appearance="quick search('riders')" ref="/sdepart/person">
-      <label>Rider Name</label>
-      <item>
-        <label>rider</label>
-        <value>rider_key</value>
-      </item>
-    </select1>
     <select1 appearance="quick search('regions')" ref="/sdepart/region">
       <label>Region</label>
       <item>
@@ -59,26 +52,31 @@
         <value>facility_key</value>
       </item>
     </select1>
-    <group ref="/sdepart/srepeat">
-      <label>New Scan</label>
-      <repeat nodeset="/sdepart/srepeat">
-        <input ref="/sdepart/srepeat/stid">
-          <label>STT Barcode</label>
-        </input>
-        <select1 appearance="quick search('stypes')" ref="/sdepart/srepeat/stype">
+    <group ref="/sdepart/trepeat">
+      <label>New Sample Type or Condition</label>
+      <repeat nodeset="/sdepart/trepeat">
+        <select1 appearance="quick search('stypes')" ref="/sdepart/trepeat/stype">
           <label>Scan Type</label>
           <item>
             <label>stype</label>
             <value>stype_key</value>
           </item>
         </select1>
-        <select1 appearance="quick search('conditions')" ref="/sdepart/srepeat/condition">
+        <select1 appearance="quick search('conditions')" ref="/sdepart/trepeat/condition">
           <label>Specimen Condition</label>
           <item>
             <label>cond</label>
             <value>cond_key</value>
           </item>
         </select1>
+        <group ref="/sdepart/trepeat/srepeat">
+          <label>New STT Barcode Scans</label>
+          <repeat nodeset="/sdepart/trepeat/srepeat">
+            <input ref="/sdepart/trepeat/srepeat/stid">
+              <label>STT Barcode</label>
+            </input>
+          </repeat>
+        </group>
       </repeat>
     </group>
     <input ref="/sdepart/store_gps">

@@ -4,12 +4,11 @@
     <h:title>4. Results Delivery</h:title>
     <model>
       <instance>
-        <rarrive id="rarrive" version="20160229">
+        <rarrive id="rarrive" version="2016031401">
           <start/>
           <end/>
           <deviceid/>
           <simserial/>
-          <person/>
           <region/>
           <facility/>
           <srepeat jr:template="">
@@ -25,7 +24,6 @@
       <bind jr:preload="timestamp" jr:preloadParams="end" nodeset="/rarrive/end" type="dateTime"/>
       <bind jr:preload="property" jr:preloadParams="deviceid" nodeset="/rarrive/deviceid" type="string"/>
       <bind jr:preload="property" jr:preloadParams="simserial" nodeset="/rarrive/simserial" type="string"/>
-      <bind nodeset="/rarrive/person" required="true()" type="select1"/>
       <bind nodeset="/rarrive/region" required="true()" type="select1"/>
       <bind nodeset="/rarrive/facility" required="true()" type="select1"/>
       <bind nodeset="/rarrive/srepeat/stid" required="true()" type="barcode"/>
@@ -34,13 +32,6 @@
     </model>
   </h:head>
   <h:body>
-    <select1 appearance="quick search('riders')" ref="/rarrive/person">
-      <label>Rider Name</label>
-      <item>
-        <label>rider</label>
-        <value>rider_key</value>
-      </item>
-    </select1>
     <select1 appearance="quick search('regions')" ref="/rarrive/region">
       <label>Region</label>
       <item>
@@ -56,7 +47,7 @@
       </item>
     </select1>
     <group ref="/rarrive/srepeat">
-      <label>New Scan</label>
+      <label>New STT Barcode Scans</label>
       <repeat nodeset="/rarrive/srepeat">
         <input ref="/rarrive/srepeat/stid">
           <label>STT Barcode</label>

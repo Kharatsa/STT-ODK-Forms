@@ -12,15 +12,13 @@ SMN,Semonkong,MSR
 HSN,Ha Seng,MSR
 STL,St. Leonard,MSR
 MTK,Matukeng,MSR
-LKT,Likotsi,MSR
 MHL,Mohale,MSR
 LKL,Likalaneng,MSR
 PAK,Paki,MSR
 BYL,Baylor,MSR
 QUN,Queen II,MSR
-PAK,Paki,MSR
 MSN,Masianokeng,MSR
-NRL,NRL,MSR
+NRLM,NRL,MSR
 THM,Thamae,MSR
 NGH,Neigh-Shin,MSR
 BLL,Bull Nosa,MSR
@@ -41,25 +39,20 @@ KRK,Koro-Koro,ROM
 NZR,Nazareth,ROM
 STB,St. Benedict,ROM
 STBR,St. Bernard,ROM
-NRL,NRL,ROM
+NRLR,NRL,ROM
 KOL,Kolo,MRJ
 STP,St. Peter,MRJ
 STBN,St. Banarbas,MRJ
-MFK,Mofoka,MRJ
 STN,St. Andrews,MRJ
 EMM,Emmause,MRJ
 MTL,Matelile,MRJ
 MLL,Malea - lea,MRJ
 MTS,Matsieng,MRJ
-KOL,Kolo,MRJ
-STP,St. Peter,MRJ
-STBN,St. Banarbas,MRJ
 MFK,Mofoka,MRJ
 PSH,Pshatlella,MRJ
-STN,St. Andrews,MRJ
 STR,St. Rodrique,MRJ
 LTT,Little Flower,MRJ
-BTHY,Bethany,MRJ
+BTH,Bethany,MRJ
 GDS,Good Shaphard,MRJ
 PBL,Paballong,MRJ
 PLT,Pilot,MRJ
@@ -72,7 +65,7 @@ STD,St. David,MRJ
 FBN,Fobane,BRM
 IMM,Immaculate,BRM
 KLJ,Kolojane,BRM
-STT,St. Theresa,BRM
+STTB,St. Theresa,BRM
 SIN,Sion,BRM
 SBD,Sebedia,BRM
 MPH,Mapheleng,BRM
@@ -90,7 +83,7 @@ LTH,Lithipeng,MHH
 HLYC,Holy Cross,MHH
 MPHK,Mphaki,QTH
 MAK,Makoae,QTH
-TSTN,Tsatsane,QTH
+TST,Tsatsane,QTH
 STG,St. Gabriel,QTH
 DLL,Dilli Dilli,QTH
 VLL,Villa Maria,QTH
@@ -106,7 +99,7 @@ PEK,Peka,LRB
 STRS,St.Rose,LRB
 STNN,St. Ann,LRB
 STMN,ST . Monicas,LRB
-SDA,SDA,LRB
+MSDA ,SDA,LRB
 JPC,JPC,LRB
 MAC,MAC,LRB
 LNT,Linotsing,LRB
@@ -122,15 +115,14 @@ MTT,Motete,MMH
 RMP,Rampai,MMH
 SSH,Seshote,MMH
 LNK,Linakaneng,MKH
-STJ,St.James,MKH
-MHLNP,Mohlanapeng,MKH
+MMP,Mohlanapeng,MKH
 LBB,Libibing,MKH
 STJ,St.James,MKH
 MLK,Molika - liko,MKH
 MKT,Moeketsane,MKH
 BKT,Boiketsiso,BTS
 NGJ,Ngoajane,BTS
-MKHN,Makhunoane,BTS
+MKH,Makhunoane,BTS
 MUL,Muela,BTS
 STPT,St. Peters,BTS
 STPL,St. Paul,BTH
@@ -150,15 +142,14 @@ MPL,Mopeli,QCH
 KTS,Katse,THP
 KHH,Khohlo -ntso,THP
 SHN,Sehong- hong,THP
-STT,St.Theresa,THP
-MHLNP,Mohlanapeng,THP
+STT  ,St.Theresa,THP
+MHP  ,Mohlanapeng,THP
 SMNN,Semenanyane,THP
 PPH,Popa HC,TST
 ARY,Auray HC,TST
 MFH,Mafa H/C,TST
 LEPH,Lephoi,TST
 MTH,Mt. Martre H/C,TST
-SMR,Samaria,MFT
 LTS,Lits'oeneng,MFT
 TSK,Tsákholo,MFT
 SKM,Sekameng,MFT

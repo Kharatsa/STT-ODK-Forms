@@ -1,6 +1,7 @@
 stype_key,stype
-request,Form
+request,Request Form
 blood,Blood
 sputum,Sputum
 urine,Urine
 dbs,Dried Blood Spot
+result,Result Form

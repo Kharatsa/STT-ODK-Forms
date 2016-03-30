@@ -1,161 +1,155 @@
 facility_key,facility,region
-KHB,Khubetsoana,MSR
-DMC,Domiciliary,MSR
-MBT,Mabote,MSR
-QLN,Qoaling,MSR
-LRT,Loretto,MSR
-THB,Thaba Bosiu,MSR
-LDF,LDF,MSR
-SDA,SDA,MSR
-LKT,Likotsi,MSR
-SMN,Semonkong,MSR
-HSN,Ha Seng,MSR
-STL,St. Leonard,MSR
-MTK,Matukeng,MSR
-MHL,Mohale,MSR
-LKL,Likalaneng,MSR
-PAK,Paki,MSR
-BYL,Baylor,MSR
-QUN,Queen II,MSR
-MSN,Masianokeng,MSR
-NRLM,NRL,MSR
-THM,Thamae,MSR
-NGH,Neigh-Shin,MSR
-BLL,Bull Nosa,MSR
-TZC,TZCC,MSR
-TWN,Taiwan,MSR
-TAWN,Taiwan II,MSR
-ECL,Eclat,MSR
-SPR,Super knitting,MSR
-HPP,Hippo Knitting,MSR
-CGM,CGM,MSR
-CNY,CNY,MSR
-GLB,Global,MSR
-SNT,Sun textile,MSR
-PRS,Presitex,MSR
-FTM,Fatima,ROM
-TLL,Tlali,ROM
-KRK,Koro-Koro,ROM
-NZR,Nazareth,ROM
-STB,St. Benedict,ROM
-STBR,St. Bernard,ROM
-NRLR,NRL,ROM
-KOL,Kolo,MRJ
-STP,St. Peter,MRJ
-STBN,St. Banarbas,MRJ
-STN,St. Andrews,MRJ
-EMM,Emmause,MRJ
-MTL,Matelile,MRJ
-MLL,Malea - lea,MRJ
-MTS,Matsieng,MRJ
-MFK,Mofoka,MRJ
-PSH,Pshatlella,MRJ
-STR,St. Rodrique,MRJ
-LTT,Little Flower,MRJ
-BTH,Bethany,MRJ
-GDS,Good Shaphard,MRJ
-PBL,Paballong,MRJ
-PLT,Pilot,MRJ
-STM,St. Magdalene,MRJ
-KOAL,Koali,MRJ
-MHLT,Mahlatsa,MRJ
-HLY,Holy Family,MRJ
-LSS,Lesotho Correctional Services,MRJ
-STD,St. David,MRJ
-FBN,Fobane,BRM
-IMM,Immaculate,BRM
-KLJ,Kolojane,BRM
-STTB,St. Theresa,BRM
-SIN,Sion,BRM
-SBD,Sebedia,BRM
-MPH,Mapheleng,BRM
-MTSN,Mootsinyana,MHH
-MRF,Morifi,MHH
-TSP,Tsepo,MHH
-MPHR,Mpharane,MHH
-LPH,Liphiring,MHH
-MHLN,Mohalinyane,MHH
-MFR,Mofumahali oa Rosary,MHH
-STC,St. Claire,MHH
-BTHL,Bethel,MHH
-PHM,Phamong,MHH
-LTH,Lithipeng,MHH
-HLYC,Holy Cross,MHH
-MPHK,Mphaki,QTH
-MAK,Makoae,QTH
-TST,Tsatsane,QTH
-STG,St. Gabriel,QTH
-DLL,Dilli Dilli,QTH
-VLL,Villa Maria,QTH
-MQK,Maqokho,QTH
-STMT,St. Mathews,QTH
-MTLM,Matlameng,LRB
-PNT,PontMain,LRB
-MRY,Maryland,LRB
-MHB,Mahobong,LRB
-THBP,Thaba - Phatsoa,LRB
-STS,Seetsa,LRB
-PEK,Peka,LRB
-STRS,St.Rose,LRB
-STNN,St. Ann,LRB
-STMN,ST . Monicas,LRB
-MSDA ,SDA,LRB
-JPC,JPC,LRB
-MAC,MAC,LRB
-LNT,Linotsing,LRB
-MST,Mositi,LRB
-LSG,Louis Gerald,LRB
-MFC,MFC,LRB
-STMR,St. Margret,LRB
-HKH,Ha Khabo,LRB
-EMMN,Emmanuel,LRB
-STDN,St. Dennis,LRB
-KAO,Kao,MMH
-MTT,Motete,MMH
-RMP,Rampai,MMH
-SSH,Seshote,MMH
-LNK,Linakaneng,MKH
-MMP,Mohlanapeng,MKH
-LBB,Libibing,MKH
-STJ,St.James,MKH
-MLK,Molika - liko,MKH
-MKT,Moeketsane,MKH
-BKT,Boiketsiso,BTS
-NGJ,Ngoajane,BTS
-MKH,Makhunoane,BTS
-MUL,Muela,BTS
-STPT,St. Peters,BTS
-STPL,St. Paul,BTH
-LSL,Leseli,BTH
-THS,Thusanang,BTH
-LNKN,Linakeng,BTH
-TSM,Tsime,BTH
-SHL,Sehlaba-Thebe,QCH
-RNK,Rankakala,QCH
-MLKN,Melikane,QCH
-STF,St. Francis,QCH
-HRM,Hermitage,QCH
-MHLP,Mohlapiso,QCH
-CHK,Christ the King,QCH
-SKK,Sekake,QCH
-MPL,Mopeli,QCH
-KTS,Katse,THP
-KHH,Khohlo -ntso,THP
-SHN,Sehong- hong,THP
-STT  ,St.Theresa,THP
-MHP  ,Mohlanapeng,THP
-SMNN,Semenanyane,THP
-PPH,Popa HC,TST
-ARY,Auray HC,TST
-MFH,Mafa H/C,TST
-LEPH,Lephoi,TST
-MTH,Mt. Martre H/C,TST
-LTS,Lits'oeneng,MFT
-TSK,Tsákholo,MFT
-SKM,Sekameng,MFT
-SMR,Samaria,MFT
-THBT,Thaba- Tsoeu,MFT
-MTLV,Mt. Olivert,MFT
-THBN,Thabana Morena,MFT
-MTTB,Mt. Tabor,MFT
-LCP,Le Coop,MFT
+BER,Berea Hospital,BRM
+FOB,Fobane,BRM
+IMM,Immaculate Clinic,BRM
+KOL,Kolojane Clinic,BRM
+MPG,Mapheleng,BRM
+SBT,Sebetia Clinic,BRM
+SIO,Sion Clinic,BRM
+STTB,St.Theresia MALUTI,BRM
+BUTH,Butha Buthe Hospital,BTH
+LES,Leseli Clinic,BTH
+STPC,St.Paul Health Centre,BTH
+THU,Thusanang Health Centre,BTH
+THC,Tsime Health Centre,BTH
+BOIK,Boiketsiso,BTS
+MAK,Makhunoane Clinic,BTS
+MUE,Muela Clinic,BTS
+NGO,Ngoajane Clinic,BTS
+STP,St.Peters Clinic - Seboche,BTS
+EMM,Emmanuel Health Clinic,LRB
+JPC,Jesse Poly Clinic,LRB
+KHB,Khabo,LRB
+LIN,Linotsing,LRB
+LOUIS,Louis Gerard,LRB
+MHC,Mahobong H.C,LRB
+MAFC,Maputsoe Filter Clinic,LRB
+MSDA,MAPUTSOE SDA,LRB
+MARY,Maryland,LRB
+MAT,Matlameng,LRB
+MAC,Medical Arts Clinic,LRB
+MOS,Mositi,LRB
+PEKA,Peka,LRB
+PONT,Pontmain,LRB
+SEET,Seetsa,LRB
+???,St. Leo,LRB
+STA,ST.Ann,LRB
+STD,ST.Denis,LRB
+STM,ST.Margaret,LRB
+MONIC,ST.Monicas,LRB
+STR,ST.Rose,LRB
+TBP,Thaba Patsoa,LRB
+COR,Correctional Services,MFT
+LEHC,LEHCOOP CLINIC,MFT
+LITS,LITSOENENG CLINIC,MFT
+OLIVE,MT OLIVET HEALTH CENTRE,MFT
+TABOR,MT TABOR HEALTH CENTRE,MFT
+SAMA,SAMARIA HEALTH CENTRE,MFT
+SEKAM,SEKAMENG CLINIC,MFT
+TSOEU,THABA TSOEU HEALTH CENTRE,MFT
+THABM,THABANA-MORENA HEALTH CENTRE,MFT
+TSAK,TSAKHOLO CLINIC,MFT
+BET,Bethel,MHH
+HOC,Holy Cross Clinic,MHH
+LIP,Liphiring Clinic,MHH
+LTP,Lithipeng Clinic,MHH
+MOR,Mofumahali oa Rosari,MHH
+MOH,Mohalinyane Clinic,MHH
+MOO,Mootsinyane Clinic,MHH
+MOF,Morifi Clinic,MHH
+MPN,Mpharane,MHH
+PHA,Phamong Clinic,MHH
+STC,ST.Claire Clinic,MHH
+TSP,Tsepo Clinic,MHH
+LBB,Libibing Clinic,MKH
+MLI,Linakaneng Clinic,MKH
+MMP,Mapholaneng Clinic,MKH
+MOE,Moeketsane Clilnic,MKH
+MLL,Molika-liko,MKH
+SJAM,St.James Clinic,MKH
+KAO,KAO,MMH
+MTT,Motete Clinic,MMH
+RAM,Rampai Clilnic,MMH
+SES,Seshote,MMH
+BETH,Bethany Clinic,MRJ
+EMMA,EMMAUSE,MRJ
+GOOD,Good Shepherd Clinic,MRJ
+HFC,Holy Family Clinic,MRJ
+KOALI,Koali Clinic,MRJ
+KOLO,Kolo Clinic - Mafeteng,MRJ
+LITT,Little Flower,MRJ
+MAH,Mahlatsa Clinic,MRJ
+MALEA,Malea-lea Clinic - Mafeteng,MRJ
+MASE,Masemouse,MRJ
+MATA,Matelile Clinic - Mafeteng,MRJ
+MATS,Matsieng Clinic,MRJ
+MOFO,Mofoka Clinic - Maseru,MRJ
+PABA,Paballong Clinic,MRJ
+PILOT,Pilot Clinic,MRJ
+PSHA,PSHATLELLA,MRJ
+RIBA,Ribaneng,MRJ
+LSC,Scott,MRJ
+STAND,ST.ANDREWS - Maseru,MRJ
+STBAR,ST.BARNABAS - Maseru,MRJ
+STDAV,St.David Health Clinic,MRJ
+MAG,ST.Magdalena Clinic,MRJ
+STPET,ST.PETER - Claver,MRJ
+STROD,ST.RODRIGUE - Maseru,MRJ
+BCM,Baylor College of Medicine,MSR
+BULN,Bull Nose,MSR
+DOMIC,Domiciliary,MSR
+HASE,Ha-Seng,MSR
+KHUB,Khubetsoana Clinic,MSR
+LDF,L.D.F,MSR
+LIKA,Likalaneng Clinic,MSR
+LIKO,Likotsi,MSR
+LORE,Loretto Clinic,MSR
+MABO,Mabote,MSR
+MASIA,Masia nokeng,MSR
+MATU,Matukeng Clinic,MSR
+MC,Mohale Clinic,MSR
+NRL,National Reference Laboratory,MSR
+PAKI,Paki Clinic,MSR
+QFC,Q.F.C,MSR
+QE2,Queen Elizabeth II Hospital,MSR
+SDA,S.D.A,MSR
+SEM,Semonkong,MSR
+STL,St.Leornard Clinic,MSR
+THABA,Thababosiu Clinic,MSR
+THAM,Thamae Clinic,MSR
+HMP,Ha Mopeli,QCH
+HERM,Hermitage,QCH
+MELI,Melikane,QCH
+MOHLA,Mohlapiso,QCH
+RANK,Rankakala,QCH
+SCH,Sacred Heart Clinic,QCH
+SEH,Sehlaba Thebe,QCH
+SKK,Sekake Clinic,QCH
+STFR,St.Francis,QCH
+DDL,Dilli-Dilli,QTH
+MKE,Makoae,QTH
+MQK,Maqokho clinic,QTH
+MPK,Mphaki Clinic,QTH
+SGB,St.Gabriel,QTH
+SMT,St.Matthews,QTH
+TSS,Tsatsane Clinic,QTH
+VMR,Villa Maria Clinic,QTH
+BRN,BERNARD CLINIC,ROM
+FAT,Fatima Clinic,ROM
+KOR,Koro-Koro Clinic,ROM
+NAZ,Nazareth Clinic,ROM
+LJO,St. Josepth's Laboratory,ROM
+BEN,St.Benedict Clinic,ROM
+TLA,Tlali Clinic,ROM
+KTC,Katse Clinic,THP
+KHN,Khohlo-Ntso Clinic,THP
+LNK,Linakeng Clinic - Paray,THP
+MHP,Mohlanapeng Clinic,THP
+SHH,Sehong-hong,THP
+SMN,Semenanyane Clinic,THP
+STT,ST.Theresa PARAY,THP
+AUR,Auray H/C,TST
+LEP,Lephoi,TST
+MAF,Mafa,TST
+MMR,Mount Martre,TST
+POP,Popa,TST

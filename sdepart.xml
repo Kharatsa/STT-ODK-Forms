@@ -4,7 +4,7 @@
     <h:title>1. Sample Pickup</h:title>
     <model>
       <instance>
-        <sdepart id="sdepart" version="2016032801">
+        <sdepart id="sdepart" version="2016033001">
           <start/>
           <end/>
           <deviceid/>
@@ -55,7 +55,7 @@
     <group ref="/sdepart/trepeat">
       <label>Sample Type</label>
       <repeat nodeset="/sdepart/trepeat">
-        <select1 appearance="quick search('stypes')" ref="/sdepart/trepeat/stype">
+        <select1 appearance="quick search('stypes', 'contains', 'relevant', 'sdepart')" ref="/sdepart/trepeat/stype">
           <label>Scan Type</label>
           <item>
             <label>stype</label>

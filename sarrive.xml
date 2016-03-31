@@ -4,7 +4,7 @@
     <h:title>2. Sample Delivery</h:title>
     <model>
       <instance>
-        <sarrive id="sarrive" version="2016032801">
+        <sarrive id="sarrive" version="2016033001">
           <start/>
           <end/>
           <deviceid/>
@@ -55,7 +55,7 @@
     <group ref="/sarrive/trepeat">
       <label>Sample Type</label>
       <repeat nodeset="/sarrive/trepeat">
-        <select1 appearance="quick search('stypes')" ref="/sarrive/trepeat/stype">
+        <select1 appearance="quick search('stypes', 'contains', 'relevant', 'sarrive')" ref="/sarrive/trepeat/stype">
           <label>Scan Type</label>
           <item>
             <label>stype</label>

@@ -1,7 +1,7 @@
-stype_key,stype
-request,Request Form
-blood,Blood
-sputum,Sputum
-urine,Urine
-dbs,Dried Blood Spot
-result,Result Form
+stype_key,stype,relevant
+request,Request Form,"sdepart,sarrive"
+blood,Blood,"sdepart,sarrive"
+sputum,Sputum,"sdepart,sarrive"
+urine,Urine,"sdepart,sarrive"
+dbs,Dried Blood Spot,"sdepart,sarrive"
+result,Result Form,"rdepart,rarrive"

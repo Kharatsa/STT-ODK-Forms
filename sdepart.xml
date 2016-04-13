@@ -4,7 +4,7 @@
     <h:title>1. Sample Pickup</h:title>
     <model>
       <instance>
-        <sdepart id="sdepart" version="2016033001">
+        <sdepart id="sdepart" version="2016041301">
           <start/>
           <end/>
           <deviceid/>
@@ -38,11 +38,11 @@
     </model>
   </h:head>
   <h:body>
-    <select1 appearance="quick search('regions')" ref="/sdepart/region">
-      <label>Region</label>
+    <select1 appearance="quick search('labs')" ref="/sdepart/region">
+      <label>Facility Lab</label>
       <item>
-        <label>region</label>
-        <value>region_key</value>
+        <label>lab</label>
+        <value>lab_key</value>
       </item>
     </select1>
     <select1 appearance="quick search('facilities', 'matches', 'region',  /sdepart/region )" ref="/sdepart/facility">

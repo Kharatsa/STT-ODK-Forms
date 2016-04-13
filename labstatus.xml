@@ -1,15 +1,14 @@
 <?xml version="1.0"?>
-<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:odk="http://www.opendatakit.org/xforms">
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <h:head>
     <h:title>Lab Status</h:title>
     <model>
       <instance>
-        <labstatus id="labstatus" version="20160221">
+        <labstatus id="labstatus" version="2016041301">
           <start/>
           <end/>
           <deviceid/>
           <simserial/>
-          <person/>
           <region/>
           <facility/>
           <stid/>
@@ -31,7 +30,6 @@
       <bind jr:preload="timestamp" jr:preloadParams="end" nodeset="/labstatus/end" type="dateTime"/>
       <bind jr:preload="property" jr:preloadParams="deviceid" nodeset="/labstatus/deviceid" type="string"/>
       <bind jr:preload="property" jr:preloadParams="simserial" nodeset="/labstatus/simserial" type="string"/>
-      <bind nodeset="/labstatus/person" type="select1"/>
       <bind nodeset="/labstatus/region" type="select1"/>
       <bind nodeset="/labstatus/facility" type="select1"/>
       <bind nodeset="/labstatus/stid" required="true()" type="barcode"/>
@@ -41,23 +39,16 @@
       <bind nodeset="/labstatus/srepeat/labtest" required="true()" type="select1"/>
       <bind nodeset="/labstatus/srepeat/labreject" type="select1"/>
       <bind nodeset="/labstatus/store_gps" type="geopoint"/>
-      <bind nodeset="/labstatus/rawxml" odk:length="16000" type="string"/>
+      <bind nodeset="/labstatus/rawxml" odk-length="16000" type="string"/>
       <bind calculate="concat('uuid:', uuid())" nodeset="/labstatus/meta/instanceID" readonly="true()" type="string"/>
     </model>
   </h:head>
   <h:body>
-    <select1 appearance="quick search('riders')" ref="/labstatus/person">
-      <label>Lab Person</label>
+    <select1 appearance="quick search('labs')" ref="/labstatus/region">
+      <label>Facility Lab</label>
       <item>
-        <label>rider</label>
-        <value>rider_key</value>
-      </item>
-    </select1>
-    <select1 appearance="quick search('regions')" ref="/labstatus/region">
-      <label>Region</label>
-      <item>
-        <label>region</label>
-        <value>region_key</value>
+        <label>lab</label>
+        <value>lab_key</value>
       </item>
     </select1>
     <select1 appearance="quick search('facilities', 'matches', 'region',  /labstatus/region )" ref="/labstatus/facility">

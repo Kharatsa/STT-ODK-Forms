@@ -28,7 +28,6 @@ FAT,Fatima Clinic,LJO
 KOR,Koro-Koro Clinic,LJO
 NAZ,Nazareth Clinic,LJO
 LJO,St Joseph’s Hospital,LJO
-LJO,St. Josepth's Laboratory,LJO
 BEN,St.Benedict Clinic,LJO
 TLA,Tlali Clinic,LJO
 EMM,Emmanuel Health Clinic,LMB
@@ -85,7 +84,7 @@ MPN,Mpharane,LMH
 PHA,Phamong Clinic,LMH
 STC,ST.Claire Clinic,LMH
 TSP,Tsepo Clinic,LMH
-LBB,Libibing Clinic,LMK
+LBBF,Libibing Clinic,LMK
 MLI,Linakaneng Clinic,LMK
 MMP,Mapholaneng Clinic,LMK
 MOE,Moeketsane Clilnic,LMK
@@ -132,7 +131,6 @@ MATS,Matsieng Clinic,LSC
 MOFO,Mofoka Clinic - Maseru,LSC
 PSHA,PSHATLELLA,LSC
 RIBA,Ribaneng,LSC
-LSC,Scott,LSC
 LSC,Scott Hospital,LSC
 STAND,ST.ANDREWS - Maseru,LSC
 STBAR,ST.BARNABAS - Maseru,LSC

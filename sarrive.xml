@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <h:head>
-    <h:title>sarrive</h:title>
+    <h:title>2. Sample Delivery</h:title>
     <model>
       <instance>
-        <lab_key id="sarrive">
+        <sarrive id="sarrive" version="2016041301">
           <start/>
           <end/>
           <deviceid/>
@@ -22,64 +22,64 @@
           <meta>
             <instanceID/>
           </meta>
-        </lab_key>
+        </sarrive>
       </instance>
-      <bind jr:preload="timestamp" jr:preloadParams="start" nodeset="/lab_key/start" type="dateTime"/>
-      <bind jr:preload="timestamp" jr:preloadParams="end" nodeset="/lab_key/end" type="dateTime"/>
-      <bind jr:preload="property" jr:preloadParams="deviceid" nodeset="/lab_key/deviceid" type="string"/>
-      <bind jr:preload="property" jr:preloadParams="simserial" nodeset="/lab_key/simserial" type="string"/>
-      <bind nodeset="/lab_key/region" required="true()" type="select1"/>
-      <bind nodeset="/lab_key/facility" required="true()" type="select1"/>
-      <bind nodeset="/lab_key/trepeat/stype" required="true()" type="select1"/>
-      <bind nodeset="/lab_key/trepeat/condition" relevant="not(selected( /lab_key/trepeat/stype , 'request'))" required="true()" type="select1"/>
-      <bind nodeset="/lab_key/trepeat/srepeat/stid" required="true()" type="barcode"/>
-      <bind nodeset="/lab_key/store_gps" type="geopoint"/>
-      <bind calculate="concat('uuid:', uuid())" nodeset="/lab_key/meta/instanceID" readonly="true()" type="string"/>
+      <bind jr:preload="timestamp" jr:preloadParams="start" nodeset="/sarrive/start" type="dateTime"/>
+      <bind jr:preload="timestamp" jr:preloadParams="end" nodeset="/sarrive/end" type="dateTime"/>
+      <bind jr:preload="property" jr:preloadParams="deviceid" nodeset="/sarrive/deviceid" type="string"/>
+      <bind jr:preload="property" jr:preloadParams="simserial" nodeset="/sarrive/simserial" type="string"/>
+      <bind nodeset="/sarrive/region" required="true()" type="select1"/>
+      <bind nodeset="/sarrive/facility" required="true()" type="select1"/>
+      <bind nodeset="/sarrive/trepeat/stype" required="true()" type="select1"/>
+      <bind nodeset="/sarrive/trepeat/condition" relevant="not(selected( /sarrive/trepeat/stype , 'request'))" required="true()" type="select1"/>
+      <bind nodeset="/sarrive/trepeat/srepeat/stid" required="true()" type="barcode"/>
+      <bind nodeset="/sarrive/store_gps" type="geopoint"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/sarrive/meta/instanceID" readonly="true()" type="string"/>
     </model>
   </h:head>
   <h:body>
-    <select1 appearance="quick search('labs')" ref="/lab_key/region">
+    <select1 appearance="quick search('labs')" ref="/sarrive/region">
       <label>Facility Lab</label>
       <item>
-        <label>region</label>
-        <value>region_key</value>
+        <label>lab</label>
+        <value>lab_key</value>
       </item>
     </select1>
-    <select1 appearance="quick search('facilities', 'matches', 'region',  /lab_key/region )" ref="/lab_key/facility">
+    <select1 appearance="quick search('facilities', 'matches', 'region',  /sarrive/region )" ref="/sarrive/facility">
       <label>Facility</label>
       <item>
         <label>facility</label>
         <value>facility_key</value>
       </item>
     </select1>
-    <group ref="/lab_key/trepeat">
+    <group ref="/sarrive/trepeat">
       <label>Sample Type</label>
-      <repeat nodeset="/lab_key/trepeat">
-        <select1 appearance="quick search('stypes', 'contains', 'relevant', 'sarrive')" ref="/lab_key/trepeat/stype">
+      <repeat nodeset="/sarrive/trepeat">
+        <select1 appearance="quick search('stypes', 'contains', 'relevant', 'sarrive')" ref="/sarrive/trepeat/stype">
           <label>Scan Type</label>
           <item>
             <label>stype</label>
             <value>stype_key</value>
           </item>
         </select1>
-        <select1 appearance="quick search('conditions')" ref="/lab_key/trepeat/condition">
+        <select1 appearance="quick search('conditions')" ref="/sarrive/trepeat/condition">
           <label>Specimen Condition</label>
           <item>
             <label>cond</label>
             <value>cond_key</value>
           </item>
         </select1>
-        <group ref="/lab_key/trepeat/srepeat">
+        <group ref="/sarrive/trepeat/srepeat">
           <label>Scan</label>
-          <repeat nodeset="/lab_key/trepeat/srepeat">
-            <input ref="/lab_key/trepeat/srepeat/stid">
+          <repeat nodeset="/sarrive/trepeat/srepeat">
+            <input ref="/sarrive/trepeat/srepeat/stid">
               <label>STT Barcode</label>
             </input>
           </repeat>
         </group>
       </repeat>
     </group>
-    <input ref="/lab_key/store_gps">
+    <input ref="/sarrive/store_gps">
       <label>GPS Coordinates</label>
       <hint>GPS coordinates can only be collected when outside.</hint>
     </input>

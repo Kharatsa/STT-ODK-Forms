@@ -4,7 +4,7 @@
     <h:title>4. Results Delivery</h:title>
     <model>
       <instance>
-        <rarrive id="rarrive" version="2016041301">
+        <rarrive id="rarrive" version="2016050201">
           <start/>
           <end/>
           <deviceid/>
@@ -39,7 +39,7 @@
         <value>lab_key</value>
       </item>
     </select1>
-    <select1 appearance="quick search('facilities', 'matches', 'region',  /rarrive/region )" ref="/rarrive/facility">
+    <select1 appearance="quick search('facilities', 'matches', 'lab',  /rarrive/region )" ref="/rarrive/facility">
       <label>Facility</label>
       <item>
         <label>facility</label>

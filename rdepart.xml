@@ -4,7 +4,7 @@
     <h:title>3. Results Pickup</h:title>
     <model>
       <instance>
-        <rdepart id="rdepart" version="2016041301">
+        <rdepart id="rdepart" version="2016050201">
           <start/>
           <end/>
           <deviceid/>
@@ -39,7 +39,7 @@
         <value>lab_key</value>
       </item>
     </select1>
-    <select1 appearance="quick search('facilities', 'matches', 'region',  /rdepart/region )" ref="/rdepart/facility">
+    <select1 appearance="quick search('facilities', 'matches', 'lab',  /rdepart/region )" ref="/rdepart/facility">
       <label>Facility</label>
       <item>
         <label>facility</label>

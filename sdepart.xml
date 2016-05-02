@@ -4,7 +4,7 @@
     <h:title>1. Sample Pickup</h:title>
     <model>
       <instance>
-        <sdepart id="sdepart" version="2016041301">
+        <sdepart id="sdepart" version="2016050201">
           <start/>
           <end/>
           <deviceid/>
@@ -45,7 +45,7 @@
         <value>lab_key</value>
       </item>
     </select1>
-    <select1 appearance="quick search('facilities', 'matches', 'region',  /sdepart/region )" ref="/sdepart/facility">
+    <select1 appearance="quick search('facilities', 'matches', 'lab',  /sdepart/region )" ref="/sdepart/facility">
       <label>Facility</label>
       <item>
         <label>facility</label>

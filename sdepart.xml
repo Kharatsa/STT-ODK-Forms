@@ -4,7 +4,7 @@
     <h:title>1. Sample Pickup</h:title>
     <model>
       <instance>
-        <sdepart id="sdepart" version="2016050201">
+        <sdepart id="sdepart" version="2016061201">
           <start/>
           <end/>
           <deviceid/>

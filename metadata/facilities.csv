@@ -46,7 +46,7 @@ LMB,Motebang,LMB
 PEKA,Peka,LMB
 PONT,Pontmain,LMB
 SEET,Seetsa,LMB
-LEO,St. Leo,LMB
+LEO  ,St. Leo,LMB
 STA,ST.Ann,LMB
 STD,ST.Denis,LMB
 STM,ST.Margaret,LMB
@@ -123,12 +123,14 @@ SMT,St.Matthews,LQT
 TSS,Tsatsane Clinic,LQT
 VMR,Villa Maria Clinic,LQT
 EMMA,EMMAUSE,LSC
+KENA ,Kena Clinic,LSC
 KOLO,Kolo Clinic - Mafeteng,LSC
 MALEA,Malea-lea Clinic - Mafeteng,LSC
 MASE,Masemouse,LSC
 MATA,Matelile Clinic - Mafeteng,LSC
 MATS,Matsieng Clinic,LSC
 MOFO,Mofoka Clinic - Maseru,LSC
+MOTS,Motsekuoa Clinic - Mafeteng,LSC
 PSHA,PSHATLELLA,LSC
 RIBA,Ribaneng,LSC
 LSC,Scott Hospital,LSC

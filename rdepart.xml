@@ -4,7 +4,7 @@
     <h:title>3. Results Pickup</h:title>
     <model>
       <instance>
-        <rdepart id="rdepart" version="2016061201">
+        <rdepart id="rdepart" version="2016050201">
           <start/>
           <end/>
           <deviceid/>
@@ -20,12 +20,13 @@
           </meta>
         </rdepart>
       </instance>
+      <instance id="facilities" src="jr://file-csv/facilities.csv"/>
       <bind jr:preload="timestamp" jr:preloadParams="start" nodeset="/rdepart/start" type="dateTime"/>
       <bind jr:preload="timestamp" jr:preloadParams="end" nodeset="/rdepart/end" type="dateTime"/>
       <bind jr:preload="property" jr:preloadParams="deviceid" nodeset="/rdepart/deviceid" type="string"/>
       <bind jr:preload="property" jr:preloadParams="simserial" nodeset="/rdepart/simserial" type="string"/>
       <bind nodeset="/rdepart/region" required="true()" type="select1"/>
-      <bind nodeset="/rdepart/facility" required="true()" type="select1"/>
+      <bind calculate="pulldata('facilities', 'facility_key', 'facility_key',  /rdepart/region )" nodeset="/rdepart/facility" type="string"/>
       <bind nodeset="/rdepart/srepeat/stid" required="true()" type="barcode"/>
       <bind nodeset="/rdepart/store_gps" type="geopoint"/>
       <bind calculate="concat('uuid:', uuid())" nodeset="/rdepart/meta/instanceID" readonly="true()" type="string"/>
@@ -37,13 +38,6 @@
       <item>
         <label>lab</label>
         <value>lab_key</value>
-      </item>
-    </select1>
-    <select1 appearance="quick search('facilities', 'matches', 'lab',  /rdepart/region )" ref="/rdepart/facility">
-      <label>Facility</label>
-      <item>
-        <label>facility</label>
-        <value>facility_key</value>
       </item>
     </select1>
     <group ref="/rdepart/srepeat">

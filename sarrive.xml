@@ -4,7 +4,7 @@
     <h:title>2. Sample Delivery</h:title>
     <model>
       <instance>
-        <sarrive id="sarrive" version="2016061201">
+        <sarrive id="sarrive" version="2016110801">
           <start/>
           <end/>
           <deviceid/>
@@ -24,12 +24,13 @@
           </meta>
         </sarrive>
       </instance>
+      <instance id="facilities" src="jr://file-csv/facilities.csv"/>
       <bind jr:preload="timestamp" jr:preloadParams="start" nodeset="/sarrive/start" type="dateTime"/>
       <bind jr:preload="timestamp" jr:preloadParams="end" nodeset="/sarrive/end" type="dateTime"/>
       <bind jr:preload="property" jr:preloadParams="deviceid" nodeset="/sarrive/deviceid" type="string"/>
       <bind jr:preload="property" jr:preloadParams="simserial" nodeset="/sarrive/simserial" type="string"/>
       <bind nodeset="/sarrive/region" required="true()" type="select1"/>
-      <bind nodeset="/sarrive/facility" required="true()" type="select1"/>
+      <bind calculate="pulldata('facilities', 'facility_key', 'facility_key',  /sarrive/region )" nodeset="/sarrive/facility" type="string"/>
       <bind nodeset="/sarrive/trepeat/stype" required="true()" type="select1"/>
       <bind nodeset="/sarrive/trepeat/condition" relevant="not(selected( /sarrive/trepeat/stype , 'request'))" required="true()" type="select1"/>
       <bind nodeset="/sarrive/trepeat/srepeat/stid" required="true()" type="barcode"/>
@@ -43,13 +44,6 @@
       <item>
         <label>lab</label>
         <value>lab_key</value>
-      </item>
-    </select1>
-    <select1 appearance="quick search('facilities', 'matches', 'lab',  /sarrive/region )" ref="/sarrive/facility">
-      <label>Facility</label>
-      <item>
-        <label>facility</label>
-        <value>facility_key</value>
       </item>
     </select1>
     <group ref="/sarrive/trepeat">

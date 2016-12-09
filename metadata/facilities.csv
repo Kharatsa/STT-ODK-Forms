@@ -1,95 +1,100 @@
 facility_key,facility,lab
-LBB,Butha Buthe,LBB
 BUTH,Butha Buthe Hospital,LBB
+LBB,Butha Buthe,LBB
 LES,Leseli Clinic,LBB
+LHC,Linakeng Health Centre - BB,LBB
 STPC,St.Paul Health Centre,LBB
-THU,Thusanang Health Centre,LBB
 THC,Tsime Health Centre,LBB
-LBE,Berea,LBE
+THU,Thusanang Health Centre,LBB
 BER,Berea Hospital,LBE
 BETH,Bethany Clinic,LBE
 GOOD,Good Shepherd Clinic,LBE
 HFC,Holy Family Clinic,LBE
 KOALI,Koali Clinic,LBE
+LBE,Berea,LBE
+LCS,LCS Clinic,LBE
 LITT,Little Flower,LBE
+MAG,ST.Magdalena Clinic,LBE
 MAH,Mahlatsa Clinic,LBE
 PABA,Paballong Clinic,LBE
 PILOT,Pilot Clinic,LBE
 STDAV,St.David Health Clinic,LBE
-MAG,ST.Magdalena Clinic,LBE
 AUR,Auray H/C,LJM
 LEP,Lephoi,LJM
+LJM,St. James,LJM
 MAF,Mafa,LJM
 MMR,Mount Martre,LJM
 POP,Popa,LJM
-LJM,St. James,LJM
+BEN,St.Benedict Clinic,LJO
 BRN,BERNARD CLINIC,LJO
 FAT,Fatima Clinic,LJO
 KOR,Koro-Koro Clinic,LJO
-NAZ,Nazareth Clinic,LJO
 LJO,St Joseph’s Hospital,LJO
-BEN,St.Benedict Clinic,LJO
+NAZ,Nazareth Clinic,LJO
 TLA,Tlali Clinic,LJO
 EMM,Emmanuel Health Clinic,LMB
+JHN,Johnson Clinic,LMB
 JPC,Jesse Poly Clinic,LMB
 KHB,Khabo,LMB
+LEO,St. Leo,LMB
 LIN,Linotsing,LMB
+LMB,Motebang,LMB
 LOUIS,Louis Gerard,LMB
-MHC,Mahobong H.C,LMB
+MAC,Medical Arts Clinic,LMB
 MAFC,Maputsoe Filter Clinic,LMB
-MSDA,MAPUTSOE SDA,LMB
 MARY,Maryland,LMB
 MAT,Matlameng,LMB
-MAC,Medical Arts Clinic,LMB
+MHB,Mahobong Holy Trinity,LMB
+MHC,Mahobong H.C,LMB
+MONIC,ST.Monicas,LMB
 MOS,Mositi,LMB
-LMB,Motebang,LMB
+MSDA,MAPUTSOE SDA,LMB
 PEKA,Peka,LMB
 PONT,Pontmain,LMB
 SEET,Seetsa,LMB
-LEO,St. Leo,LMB
 STA,ST.Ann,LMB
 STD,ST.Denis,LMB
 STM,ST.Margaret,LMB
-MONIC,ST.Monicas,LMB
 STR,ST.Rose,LMB
 TBP,Thaba Patsoa,LMB
 HERM,Hermitage,LMC
 LMC,Machabeng,LMC
 MELI,Melikane,LMC
 MOHLA,Mohlapiso,LMC
+MTB  ,Matebeng Clinic,LMC
 RANK,Rankakala,LMC
 SEH,Sehlaba Thebe,LMC
 STFR,St.Francis,LMC
-COR,Correctional Services,LMF
 LEHC,LEHCOOP CLINIC,LMF
 LITS,LITSOENENG CLINIC,LMF
 LMF,Mafeteng,LMF
 OLIVE,MT OLIVET HEALTH CENTRE,LMF
-TABOR,MT TABOR HEALTH CENTRE,LMF
 SAMA,SAMARIA HEALTH CENTRE,LMF
 SEKAM,SEKAMENG CLINIC,LMF
-TSOEU,THABA TSOEU HEALTH CENTRE,LMF
+TABOR,MT TABOR HEALTH CENTRE,LMF
 THABM,THABANA-MORENA HEALTH CENTRE,LMF
 TSAK,TSAKHOLO CLINIC,LMF
+TSOEU,THABA TSOEU HEALTH CENTRE,LMF
 BET,Bethel,LMH
 HOC,Holy Cross Clinic,LMH
 LIP,Liphiring Clinic,LMH
-LTP,Lithipeng Clinic,LMH
-MOR,Mofumahali oa Rosari,LMH
 LMH,Mohale's Hoek Lab/Ntsekhe Lab,LMH
+LTP,Lithipeng Clinic,LMH
+MOF,Morifi Clinic,LMH
 MOH,Mohalinyane Clinic,LMH
 MOO,Mootsinyane Clinic,LMH
-MOF,Morifi Clinic,LMH
+MOR,Mofumahali oa Rosari,LMH
 MPN,Mpharane,LMH
 PHA,Phamong Clinic,LMH
 STC,ST.Claire Clinic,LMH
 TSP,Tsepo Clinic,LMH
 LBBF,Libibing Clinic,LMK
+LMK,Mokhotlong,LMK
+MLF  ,Malefiloane Clinic,LMK
 MLI,Linakaneng Clinic,LMK
+MLL,Molika-liko,LMK
 MMP,Mapholaneng Clinic,LMK
 MOE,Moeketsane Clilnic,LMK
-LMK,Mokhotlong,LMK
-MLL,Molika-liko,LMK
 SJAM,St.James Clinic,LMK
 FOB,Fobane,LML
 IMM,Immaculate Clinic,LML
@@ -103,21 +108,22 @@ LMM,Makoanyane Hospital,LMM
 KAO,KAO,LMU
 LMU,Mamahao,LMU
 MTT,Motete Clinic,LMU
+PAL  ,Palama,LMU
 RAM,Rampai Clilnic,LMU
 SES,Seshote,LMU
-KTC,Katse Clinic,LPA
 KHN,Khohlo-Ntso Clinic,LPA
+KTC,Katse Clinic,LPA
 LNK,Linakeng Clinic - Paray,LPA
-MHP,Mohlanapeng Clinic,LPA
 LPA,Paray,LPA
+MHP,Mohlanapeng Clinic,LPA
 SHH,Sehong-hong,LPA
 SMN,Semenanyane Clinic,LPA
 STT,ST.Theresa PARAY,LPA
 DDL,Dilli-Dilli,LQT
-MKE,Makoae,LQT
-MQK,Maqokho clinic,LQT
-MPK,Mphaki Clinic,LQT
 LQT,Quthing,LQT
+MKE,Makoae,LQT
+MPK,Mphaki Clinic,LQT
+MQK,Maqokho clinic,LQT
 SGB,St.Gabriel,LQT
 SMT,St.Matthews,LQT
 TSS,Tsatsane Clinic,LQT
@@ -125,6 +131,7 @@ VMR,Villa Maria Clinic,LQT
 EMMA,EMMAUSE,LSC
 KENA,Kena Clinic,LSC
 KOLO,Kolo Clinic - Mafeteng,LSC
+LSC,Scott Hospital,LSC
 MALEA,Malea-lea Clinic - Mafeteng,LSC
 MASE,Masemouse,LSC
 MATA,Matelile Clinic - Mafeteng,LSC
@@ -133,25 +140,29 @@ MOFO,Mofoka Clinic - Maseru,LSC
 MOTS,Motsekuoa Clinic - Mafeteng,LSC
 PSHA,PSHATLELLA,LSC
 RIBA,Ribaneng,LSC
-LSC,Scott Hospital,LSC
 STAND,ST.ANDREWS - Maseru,LSC
 STBAR,ST.BARNABAS - Maseru,LSC
 STPET,ST.PETER - Claver,LSC
 STROD,ST.RODRIGUE - Maseru,LSC
 BOIK,Boiketsiso,LSE
+LSE,Seboche,LSE
 MAK,Makhunoane Clinic,LSE
 MUE,Muela Clinic,LSE
 NGO,Ngoajane Clinic,LSE
-LSE,Seboche,LSE
 STP,St.Peters Clinic - Seboche,LSE
 HMP,Ha Mopeli,LTL
+LTL,Tebellong,LTL
 SCH,Sacred Heart Clinic,LTL
 SKK,Sekake Clinic,LTL
-LTL,Tebellong,LTL
 BCM,Baylor College of Medicine,NRL
 BULN,Bull Nose,NRL
+CGM,CGM,NRL
+CNY,CNY,NRL
+COR,Correctional Services,NRL
 DOMIC,Domiciliary,NRL
+GLB,Global,NRL
 HASE,Ha-Seng,NRL
+HPP,Hippo Knitting,NRL
 KHUB,Khubetsoana Clinic,NRL
 LDF,L.D.F,NRL
 LIKA,Likalaneng Clinic,NRL
@@ -161,12 +172,22 @@ MABO,Mabote,NRL
 MASIA,Masia nokeng,NRL
 MATU,Matukeng Clinic,NRL
 MC,Mohale Clinic,NRL
+NGH,Neigh-Shin,NRL
 NRL,National Reference Laboratory,NRL
 PAKI,Paki Clinic,NRL
-QFC,Q.F.C,NRL
+PRS,Presitex,NRL
 QE2,Queen Elizabeth II Hospital,NRL
+QFC,Q.F.C,NRL
 SDA,S.D.A,NRL
 SEM,Semonkong,NRL
+SHNN,SHINNING,NRL
+SNT,Sun Textile,NRL
+SPR,Super Knitting,NRL
 STL,St. Leornard Clinic,NRL
+TAWN,Taiwan II,NRL
+TBCL,TEBA Clinic,NRL
 THABA,Thababosiu Clinic,NRL
 THAM,Thamae Clinic,NRL
+TWN,Taiwan,NRL
+TZC,TZCC,NRL
+WELL,Wellness Centre,NRL

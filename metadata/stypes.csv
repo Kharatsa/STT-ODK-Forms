@@ -1,6 +1,7 @@
 stype_key,stype,relevant
 request,Request Form,"sdepart,sarrive"
 blood,Blood,"sdepart,sarrive"
+viral,Viral Load,"sdepart,sarrive"
 sputum,Sputum,"sdepart,sarrive"
 urine,Urine,"sdepart,sarrive"
 dbs,Dried Blood Spot,"sdepart,sarrive"

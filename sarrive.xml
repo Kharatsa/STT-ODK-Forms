@@ -4,7 +4,7 @@
     <h:title>2. Sample Delivery</h:title>
     <model>
       <instance>
-        <sarrive id="sarrive" version="2016110801">
+        <sarrive id="sarrive" version="2016120801">
           <start/>
           <end/>
           <deviceid/>
@@ -33,7 +33,7 @@
       <bind calculate="pulldata('facilities', 'facility_key', 'facility_key',  /sarrive/region )" nodeset="/sarrive/facility" type="string"/>
       <bind nodeset="/sarrive/trepeat/stype" required="true()" type="select1"/>
       <bind nodeset="/sarrive/trepeat/condition" relevant="not(selected( /sarrive/trepeat/stype , 'request'))" required="true()" type="select1"/>
-      <bind nodeset="/sarrive/trepeat/srepeat/stid" required="true()" type="barcode"/>
+      <bind constraint="regex(., '[\w\d]{9}\d{3}')" jr:constraintMsg="Scanned barcode does not match the required pattern" nodeset="/sarrive/trepeat/srepeat/stid" required="true()" type="barcode"/>
       <bind nodeset="/sarrive/store_gps" type="geopoint"/>
       <bind calculate="concat('uuid:', uuid())" nodeset="/sarrive/meta/instanceID" readonly="true()" type="string"/>
     </model>
@@ -75,7 +75,6 @@
     </group>
     <input ref="/sarrive/store_gps">
       <label>GPS Coordinates</label>
-      <hint>GPS coordinates can only be collected when outside.</hint>
     </input>
   </h:body>
 </h:html>

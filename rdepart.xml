@@ -4,7 +4,7 @@
     <h:title>3. Results Pickup</h:title>
     <model>
       <instance>
-        <rdepart id="rdepart" version="2016120801">
+        <rdepart id="rdepart" version="2016120802">
           <start/>
           <end/>
           <deviceid/>
@@ -27,7 +27,7 @@
       <bind jr:preload="property" jr:preloadParams="simserial" nodeset="/rdepart/simserial" type="string"/>
       <bind nodeset="/rdepart/region" required="true()" type="select1"/>
       <bind calculate="pulldata('facilities', 'facility_key', 'facility_key',  /rdepart/region )" nodeset="/rdepart/facility" type="string"/>
-      <bind constraint="regex(., '[\w\d]{9}\d{3}')" jr:constraintMsg="Scanned barcode does not match the required pattern" nodeset="/rdepart/srepeat/stid" required="true()" type="barcode"/>
+      <bind constraint="regex(., '^[\d\w]{9}\d{3}$')" jr:constraintMsg="Scanned barcode does not match the required pattern" nodeset="/rdepart/srepeat/stid" required="true()" type="barcode"/>
       <bind nodeset="/rdepart/store_gps" type="geopoint"/>
       <bind calculate="concat('uuid:', uuid())" nodeset="/rdepart/meta/instanceID" readonly="true()" type="string"/>
     </model>

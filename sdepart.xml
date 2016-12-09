@@ -4,7 +4,7 @@
     <h:title>1. Sample Pickup</h:title>
     <model>
       <instance>
-        <sdepart id="sdepart" version="2016120801">
+        <sdepart id="sdepart" version="2016120802">
           <start/>
           <end/>
           <deviceid/>
@@ -32,7 +32,7 @@
       <bind nodeset="/sdepart/facility" required="true()" type="select1"/>
       <bind nodeset="/sdepart/trepeat/stype" required="true()" type="select1"/>
       <bind nodeset="/sdepart/trepeat/condition" relevant="not(selected( /sdepart/trepeat/stype , 'request'))" required="true()" type="select1"/>
-      <bind constraint="regex(., '[\w\d]{9}\d{3}')" jr:constraintMsg="Scanned barcode does not match the required pattern" nodeset="/sdepart/trepeat/srepeat/stid" required="true()" type="barcode"/>
+      <bind constraint="regex(., '^[\d\w]{9}\d{3}$')" jr:constraintMsg="Scanned barcode does not match the required pattern" nodeset="/sdepart/trepeat/srepeat/stid" required="true()" type="barcode"/>
       <bind nodeset="/sdepart/store_gps" type="geopoint"/>
       <bind calculate="concat('uuid:', uuid())" nodeset="/sdepart/meta/instanceID" readonly="true()" type="string"/>
     </model>

@@ -12,7 +12,6 @@ GOOD,Good Shepherd Clinic,LBE
 HFC,Holy Family Clinic,LBE
 KOALI,Koali Clinic,LBE
 LBE,Berea,LBE
-LCS,LCS Clinic,LBE
 LITT,Little Flower,LBE
 MAG,ST.Magdalena Clinic,LBE
 MAH,Mahlatsa Clinic,LBE
@@ -96,6 +95,7 @@ MLL,Molika-liko,LMK
 MMP,Mapholaneng Clinic,LMK
 MOE,Moeketsane Clilnic,LMK
 SJAM,St.James Clinic,LMK
+SMR,St. Martins,LMK
 FOB,Fobane,LML
 IMM,Immaculate Clinic,LML
 KOL,Kolojane Clinic,LML
@@ -106,7 +106,7 @@ SIO,Sion Clinic,LML
 STTB,St.Theresia MALUTI,LML
 LMM,Makoanyane Hospital,LMM
 KAO,KAO,LMU
-LMU,Mamahao,LMU
+LMU,Mamohau,LMU
 MTT,Motete Clinic,LMU
 PAL  ,Palama,LMU
 RAM,Rampai Clilnic,LMU
@@ -164,6 +164,7 @@ GLB,Global,NRL
 HASE,Ha-Seng,NRL
 HPP,Hippo Knitting,NRL
 KHUB,Khubetsoana Clinic,NRL
+LCS,LCS Clinic,NRL
 LDF,L.D.F,NRL
 LIKA,Likalaneng Clinic,NRL
 LIKO,Likotsi,NRL

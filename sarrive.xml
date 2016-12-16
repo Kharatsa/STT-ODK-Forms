@@ -4,7 +4,7 @@
     <h:title>2. Sample Delivery</h:title>
     <model>
       <instance>
-        <sarrive id="sarrive" version="2016120802">
+        <sarrive id="sarrive" version="2016121501">
           <start/>
           <end/>
           <deviceid/>
